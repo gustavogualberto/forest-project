@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-verde-200: #acee75;
+  --color-verde-300: #91ee77;
+  --color-verde-400: #17e880;
+  --color-verde-700: #2e482c;
+  --color-verde-800: #16281f;
+  --color-verde-900: #0f1c15;
+  --color-verde-950: #030504;
+}
+
+@layer components {
+  .radial-gradient {
+    background-image: radial-gradient(
+      50% 100% at 50% 0%,
+      theme(colors.verde.700) 0%,
+      theme(colors.verde.800) 100%
+    );
+  }
+}

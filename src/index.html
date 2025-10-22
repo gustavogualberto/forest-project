@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forest</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./input.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-verde-800 font-sans">
+  <header>
+    <div class="container mx-auto p-4 flex flex-col relative gap-8">
+      <div class=" flex divide-x-3 divide-verde-800 font-light">
+        <span class="rounded-full neon block border-3 size-2 bg-verde-200 border-verde-200 absolute top-8 left-3 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+        <h4 class="bg-verde-900 text-verde-200 py-2 pl-6 pr-4 rounded-l-md">Terça</h4>
+        <h4 class="bg-verde-900 text-verde-200 px-4 py-2 ">23°</h4>
+        <h4 class="bg-verde-900 text-verde-200 px-4 py-2 rounded-r-md">🌧️ 28%</h4>
+      </div>
+
+      <div class="flex flex-cols-2 justify-between">
+        <img src="../img/forest.svg" alt="floresta">
+        <!-- <h1 class="font-serif text-5xl font-semibold cursor-pointer text-white">Forest</h1> -->
+        <div class="flex gap-8 self-end text-lg text-white ">
+          <h3 class="cursor-pointer hover:underline decoration-2 underline-offset-8">Acomodações</h3>
+          <h3 class="cursor-pointer hover:underline decoration-2 underline-offset-8">Eventos</h3>
+          <h3 class="cursor-pointer hover:underline decoration-2 underline-offset-8">Experiências</h3>
+          <h3 class="cursor-pointer hover:underline decoration-2 underline-offset-8">Contato</h3>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="mt-8 flex flex-cols-2 justify-between container mx-auto h-150 w-auto bg-cover bg-center relative">
+        <video class="w-full h-full object-cover rounded-2xl" autoplay loop muted>
+          <source src="../img/video_chuva.mp4" type="video/mp4">
+        </video>
+        <div class="absolute w-full h-full bg-linear-to-tr from-black/80 to-transparent rounded-2xl"></div>
+
+
+        <div class="flex absolute top-65 left-8 bg-verde-950 pr-1 py-1 pl-4 rounded-full items-center gap-5">
+          <h1 class="text-white font-sm">vagas para dezembro abertas</h1>
+          <button class="bg-linear-to-b from-verde-200 to-verde-400 px-6 py-2 rounded-full border border-verde-200 outline-none shadow-[0_0_10px_rgba(72,187,120,0.5)] hover:contrast-200 cursor-pointer transition duration-300">Reserve
+            hoje</button>
+
+        </div>
+
+        <div>
+          <h1 class="text-5xl text-white font-serif font-bold mb-35 p-8 absolute bottom-0 left-0 max-w-lg">
+            Venha Experimentar a Vida na Floresta
+          </h1>
+          <h1 class="text-sm text-white  mb-2 p-8 absolute bottom-0 left-0 max-w-lg">
+            Melhores locais para visitar <span class="cursor-pointer underline decoration-2 underline-offset-4 hover:no-underline   ">2049</span>
+          </h1>
+        </div>
+
+        <div class="grid gap-2 self-end absolute p-8 bottom-0 right-0 mb-2">
+          <h1 class="text-sm text-white font-medium max-w-lg uppercase">
+            Recomendado por
+          </h1>
+          <div class="flex ">
+            <img src="../img/parceiros/wildbeast.svg" alt="" class="max-w-32">
+            <span class="text-sm mx-5 text-white font-medium">|</span>
+            <h1 class="text-sm text-white font-medium">Revista Nacional</h1>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="container mx-auto relative pt-16 pb-16 radial-gradient">
+      <div class="grid grid-cols-[2fr_2fr_1fr] gap-8 ">
+
+        <div class="row-span-2 bg-[url('../img/padrao.svg')] bg-bottom bg-no-repeat bg-size-[90%_auto]">
+          <div class="flex items-end h-full ">
+            <div class="grid gap-8">
+              <h1 class="text-5xl text-white font-serif font-bold">Refúgio Natural</h1>
+
+              <div class="grid gap-5 text-white ">
+                <div class="flex items-center gap-2 ">
+                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                  <p class="text-[20px]">Experimente a natureza de perto</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                  <p class="text-[20px]">Conecte-se com a natureza</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                  <p class="text-[20px]">Desconecte-se do digital</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                  <p class="text-[20px]">Observe a vida selvagem</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                  <p class="text-[20px]">Escolha a sua cabine preferida</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-2 relative ">
+          <img src="../img/casa1.jpg" class="h-60 w-full object-cover rounded-lg" alt="">
+          <span class="absolute px-4 py-1  bg-black/65 text-sm text-white font-light rounded-full right-2 top-2 uppercase ">Ruby</span>
+        </div>
+        <div class="bg-verde-900 relative rounded-lg">
+          <img src="../img/casa2.jpg" class="h-100 w-full object-cover rounded-lg" alt="">
+          <span class="absolute px-4 py-1 bg-black/65 text-sm text-white font-light rounded-full right-2 top-2 uppercase">Emerald</span>
+        </div>
+        <div class="bg-verde-900 relative rounded-lg">
+          <img src="../img/casa3.jpg" class="h-100 w-full object-cover rounded-lg" alt="">
+          <span class="absolute px-4 py-1 bg-black/65 text-sm text-white font-light rounded-full right-2 top-2 uppercase">Safire</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+</body>
+
+</html>
