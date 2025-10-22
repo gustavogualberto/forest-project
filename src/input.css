@@ -10,6 +10,11 @@
   --color-verde-950: #030504;
 }
 
+
+.btn{
+  @apply bg-linear-to-b from-verde-200 to-verde-400 px-6 py-2 rounded-full border border-verde-200 outline-none shadow-[0_0_10px_rgba(72,187,120,0.5)] hover:contrast-200 cursor-pointer transition duration-300;
+}
+
 @layer components {
   .radial-gradient {
     background-image: radial-gradient(
