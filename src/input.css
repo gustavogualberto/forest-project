@@ -24,3 +24,11 @@
     );
   }
 }
+
+.font-sans {
+  font-family: DM Sans, system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: DM Serif Text, Georgia, serif;
+}
