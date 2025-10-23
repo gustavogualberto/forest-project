@@ -17,9 +17,9 @@
 <body class="bg-verde-800 font-sans">
   <header>
     <div class="container mx-auto p-4 flex flex-col relative gap-8">
-      <div class=" flex divide-x-3 divide-verde-800 font-light">
+      <div class=" flex divide-x-3 justify-start max-md:justify-center divide-verde-800 font-light">
         <span
-          class="rounded-full neon block border-3 size-2 bg-verde-200 border-verde-200 absolute top-8 left-3 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+          class="rounded-full neon block border-3 size-2 bg-verde-200 border-verde-200 absolute top-8 left-50 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
         <h4 class="bg-verde-900 text-verde-200 py-2 pl-6 pr-4 rounded-l-md">Terça</h4>
         <h4 class="bg-verde-900 text-verde-200 px-4 py-2 ">25°</h4>
         <h4 class="bg-verde-900 text-verde-200 px-4 py-2 rounded-r-md">🌧️ 28%</h4>
@@ -27,7 +27,6 @@
 
       <div class="flex flex-cols-2 justify-between">
         <img src="../img/forest.svg" alt="floresta">
-        <!-- <h1 class="font-serif text-5xl font-semibold cursor-pointer text-white">Forest</h1> -->
         <div class="flex gap-8 self-end text-lg text-white ">
           <h3 class="cursor-pointer hover:underline decoration-2 underline-offset-8">Acomodações</h3>
           <h3 class="cursor-pointer hover:underline decoration-2 underline-offset-8">Eventos</h3>
@@ -40,17 +39,17 @@
     </div>
   </header>
 
-  <main>
+  <main class="container mx-auto">
     <section>
-      <div class="mt-8 flex flex-cols-2 justify-between container mx-auto h-150 w-auto bg-cover bg-center relative">
+      <div class="mt-8 flex flex-cols-2 justify-between  mx-auto h-150 w-auto bg-cover bg-center relative">
         <video class="w-full h-full object-cover rounded-2xl" autoplay loop muted>
           <source src="../img/video_chuva.mp4" type="video/mp4">
         </video>
         <div class="absolute w-full h-full bg-linear-to-tr from-black/80 to-transparent rounded-2xl"></div>
 
-
-        <div class="flex absolute top-65 left-8 bg-verde-950 pr-1 py-1 pl-4 rounded-full items-center gap-5">
-          <h1 class="text-white font-sm">vagas para dezembro abertas</h1>
+        <div
+          class="flex absolute top-65 left-8 bg-verde-950 pr-1 py-1 pl-4 rounded-full items-center gap-5 max-sm:hidden">
+          <h1 class="text-white font-sm ">vagas para dezembro abertas</h1>
           <button class="btn">Reserve
             hoje</button>
 
@@ -80,72 +79,121 @@
       </div>
 
     </section>
+  </main>
 
-    <section class="container mx-auto relative pt-16 pb-16 radial-gradient">
-      <div class="grid grid-cols-[2fr_2fr_1fr] gap-8 ">
 
-        <div class="row-span-2 bg-[url('../img/padrao.svg')] bg-bottom bg-no-repeat bg-size-[90%_auto]">
-          <div class="flex items-end h-full ">
-            <div class="grid gap-8">
-              <h1 class="text-5xl text-white font-serif ">Refúgio Natural</h1>
-
-              <div class="grid gap-5 text-white ">
-                <div class="flex items-center gap-2 ">
-                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
-                  <p class="text-[20px]">Experimente a natureza de perto</p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
-                  <p class="text-[20px]">Conecte-se com a natureza</p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
-                  <p class="text-[20px]">Desconecte-se do digital</p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
-                  <p class="text-[20px]">Observe a vida selvagem</p>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
-                  <p class="text-[20px]">Escolha a sua cabine preferida</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-span-2 relative ">
-          <img src="../img/casa1.jpg" class="h-60 w-full object-cover rounded-lg" alt="">
-          <span
-            class="absolute px-4 py-1 bg-black/65 text-sm text-white font-light rounded-full right-2 top-2 uppercase ">Ruby</span>
-        </div>
-        <div class="bg-verde-900 relative rounded-lg">
-          <img src="../img/casa2.jpg" class="h-100 w-full object-cover rounded-lg" alt="">
-          <span
-            class="absolute px-4 py-1 bg-black/65 text-sm text-white font-light rounded-full right-2 top-2 uppercase">Emerald</span>
-        </div>
-        <div class="bg-verde-900 relative rounded-lg">
-          <img src="../img/casa3.jpg" class="h-100 w-full object-cover rounded-lg" alt="">
-          <span
-            class="absolute px-4 py-1 bg-black/65 text-sm text-white font-light rounded-full right-2 top-2 uppercase">Safire</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="grid bg-verde-900 py-16">
-      <div class="flex content-center justify-center text-verde-200 tracking text-sm max-md:text-[1rem]">
-        <h3 class="text-center font-light tracking-wider">CONECTE-SE COM A NATUREZA</h3>
-      </div>
-      <h1 class="text-center font-serif text-6xl max-md:text-4xl capitalize text-white mt-5">Cada som, cada momento,<br>
-        uma nova descoberta</h1>
+  <section class="container mx-auto relative pt-16 pb-16 radial-gradient">
+    <div class="grid grid-cols-[2fr_2fr_1fr] max-lg:grid-cols-[2fr_1fr]  gap-8 ">
 
       <div
-        class="container mx-auto gap-2 flex-wrap flex grid-cols-[auto_auto_auto] justify-between mt-8 max-sm:flex-wrap">
+        class="row-span-2 max-md:col-span-2 bg-[url('../img/padrao.svg')] w-full bg-bottom max-lg:bg-left bg-no-repeat bg-size-[90%_auto] max-lg:bg-size-[15rem]">
+        <div class="flex items-end h-full ">
+          <div class="grid gap-8">
+            <h1 class="text-5xl text-white font-serif ">Refúgio Natural</h1>
+
+            <div class="grid gap-5 text-white ">
+              <div class="flex items-center gap-2 ">
+                <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                <p class="text-[20px]">Experimente a natureza de perto</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                <p class="text-[20px]">Conecte-se com a natureza</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                <p class="text-[20px]">Desconecte-se do digital</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                <p class="text-[20px]">Observe a vida selvagem</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="neon block w-6 h-1 bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                <p class="text-[20px]">Escolha a sua cabine preferida</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-2 relative ">
+        <img src="../img/casa1.jpg" class="h-60 w-full object-cover rounded-lg" alt="">
+        <span
+          class="absolute px-4 py-1 bg-black/65 text-sm text-white font-light rounded-full right-2 top-2 uppercase ">Ruby</span>
+      </div>
+      <div class="bg-verde-900 relative rounded-lg">
+        <img src="../img/casa2.jpg" class="size-full object-cover rounded-lg" alt="">
+        <span
+          class="absolute px-4 py-1 bg-black/65 text-sm text-white font-light rounded-full right-2 top-2 uppercase">Emerald</span>
+      </div>
+      <div class="bg-verde-900 relative rounded-lg">
+        <img src="../img/casa3.jpg" class="size-full object-cover rounded-lg" alt="">
+        <span
+          class="absolute px-4 py-1 bg-black/65 text-sm text-white font-light rounded-full right-2 top-2 uppercase">Safire</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-verde-900 py-16">
+    <div class="flex content-center justify-center text-verde-200 tracking text-sm max-md:text-[1rem]">
+      <h3 class="text-center font-light tracking-wider">CONECTE-SE COM A NATUREZA</h3>
+    </div>
+    <h1 class="text-center font-serif text-6xl max-md:text-4xl capitalize text-white mt-5 mb-5">Cada som, cada momento,<br> uma nova descoberta</h1>
+    <div class="container p-10 mx-auto grid grid-cols-[repeat(3,minmax(300px,1fr))] overflow-x-auto gap-10">
+      <div class="flex gap-8 ">
+        <div class="bg-verde-800 w-100 p-6 rounded-2xl grid gap-5 ">
+          <h4 class="text-2xl font-serif text-verde-300">Lua Nova</h4>
+          <div>
+            <p class="text-white font-serif text-5xl">23</p>
+            <p class="text-white text-[1.3rem]">Março 2049</p>
+          </div>
+          <p class=" text-gray-300">Melhor período para observação<br> astronônimca. O Céu estará<br> claro e as
+            estrelas visíveis.</p>
+          <button class="btn w-45">Reservar 23/03</button>
+        </div>
+      </div>
+      <div class="flex gap-8 ">
+        <div class="bg-verde-800 w-100 p-6 rounded-2xl grid gap-5 ">
+          <h4 class="text-2xl font-serif text-verde-300">Lua Nova</h4>
+          <div>
+            <p class="text-white font-serif text-5xl">23</p>
+            <p class="text-white text-[1.3rem]">Março 2049</p>
+          </div>
+          <p class=" text-gray-300">Melhor período para observação<br> astronônimca. O Céu estará<br> claro e as
+            estrelas visíveis.</p>
+          <button class="btn w-45">Reservar 23/03</button>
+        </div>
+      </div>
+      <div class="flex gap-8 ">
+        <div class="bg-verde-800 w-100 p-6 rounded-2xl grid gap-5 ">
+          <h4 class="text-2xl font-serif text-verde-300">Lua Nova</h4>
+          <div>
+            <p class="text-white font-serif text-5xl">23</p>
+            <p class="text-white text-[1.3rem]">Março 2049</p>
+          </div>
+          <p class=" text-gray-300">Melhor período para observação<br> astronônimca. O Céu estará<br> claro e as
+            estrelas visíveis.</p>
+          <button class="btn w-45">Reservar 23/03</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="grid bg-verde-900 py-16">
+    <div class="flex content-center justify-center text-verde-200 tracking text-sm max-md:text-[1rem]">
+      <h3 class="text-center font-light tracking-wider">CONECTE-SE COM A NATUREZA</h3>
+    </div>
+    <h1 class="text-center font-serif text-6xl max-md:text-4xl capitalize text-white mt-5">Cada som, cada momento,<br>
+      uma nova descoberta</h1>
+
+    <div class="overflow-x-auto max-lg:p-10">
+
+      <div class=" container mx-auto gap-8 flex grid-[1fr_1fr_1fr] justify-between mt-8 ">
 
         <div class="flex gap-8 ">
-          <div class="bg-verde-800 w-100 p-6 rounded-2xl grid gap-5 max-md:gap-4 max-md:px-4 max-md:py-4 ">
+          <div class="bg-verde-800 w-100 p-6 rounded-2xl grid gap-5 ">
             <h4 class="text-2xl font-serif text-verde-300">Lua Nova</h4>
             <div>
               <p class="text-white font-serif text-5xl">23</p>
@@ -158,7 +206,7 @@
         </div>
 
         <div class="flex gap-8">
-          <div class="bg-verde-800 w-100 p-6 rounded-2xl grid gap-5 max-md:gap-4 max-md:px-4 max-md:py-4 ">
+          <div class="bg-verde-800 w-full p-6 rounded-2xl grid gap-5 ">
             <h4 class="text-2xl font-serif text-verde-300">Aurora Boreal</h4>
             <div>
               <p class="text-white font-serif text-5xl">15</p>
@@ -171,7 +219,7 @@
         </div>
 
         <div class="flex gap-8">
-          <div class="bg-verde-800 w-100 p-6 rounded-2xl grid gap-5  max-md:gap-4 max-md:px-4 max-md:py-4 ">
+          <div class="bg-verde-800 w-100 p-6 rounded-2xl grid gap-5  ">
             <h4 class="text-2xl font-serif text-verde-300">Aurora Boreal</h4>
             <div>
               <p class="text-white font-serif text-5xl">18</p>
@@ -185,95 +233,101 @@
         </div>
 
       </div>
-    </section>
+    </div>
 
-    <section class="my-16">
-      <div class="container mx-auto grid gap-8 grid-cols-[2fr_2fr_2fr_2fr] bg-verde-800">
-        <div class="col-span-2 bg-verde-900 rounded-xl p-8">
-          <div class="grid rows-3 gap-4">
-            <div class="flex  text-verde-200 tracking text-sm max-md:text-[1rem]">
-              <h3 class="text-center font-light tracking-wider uppercase">Experiências Exclusivas</h3>
-            </div>
+  </section> -->
 
+  <section class="my-16">
+    <div class="container mx-auto grid gap-8 grid-cols-4 max-md:grid-cols-[1fr_1fr] bg-verde-800">
+      
+      <div class="col-span-2 bg-verde-900 rounded-xl p-8">
+        <div class="grid rows-3 gap-4">
 
-            <div>
-              <h1 class="text-5xl text-white font-serif max-w-lg capitalize">Escolha sua <br> próxima aventura</h1>
-            </div>
+          <div class="flex  text-verde-200 tracking text-sm max-md:text-[1rem]">
+            <h3 class="text-center font-light tracking-wider uppercase">Experiências Exclusivas</h3>
+          </div>
+          <div>
+            <h1 class="text-5xl text-white font-serif max-w-lg capitalize">Escolha sua <br> próxima aventura</h1>
+          </div>
 
-            <div>
-                <div class="grid gap-10 mt-8">
-                  <div>
-                    <div class="flex items-center gap-2 group">
-                      <span class="neon block w-6 h-1 group-hover:w-10 transition-all bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
-                      <p class="text-[20px] text-white">Observação Noturna</p>
-                    </div>
-                    <p class="text-md font-light text-gray-400 ml-8">Explore a vida selvagem em seu habitat natural sob as estrelas.</p>
-                  </div>
-                  <div>
-                    <div class="flex items-center gap-2 group">
-                      <span class="neon block w-6 h-1 group-hover:w-10 transition-all bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
-                      <p class="text-[20px] text-white">Vida Selvagem</p>
-                    </div>
-                    <p class="text-md font-light text-gray-400 ml-8">Observe a vida selvagem em seu habitat natural.</p>
-                  </div>
-                  <div>
-                    <div class="flex items-center gap-2 group">
-                      <span class="neon block w-6 group-hover:w-10 transition-all h-1  bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
-                      <p class="text-[20px] text-white">Canoagem</p>
-                    </div>
-                    <p class="text-md font-light text-gray-400 ml-8">Conquiste novos horizontes com nossa equipe especializada.</p>
-                  </div>
-                  
+          <div>
+            <div class="grid gap-10 mt-8">
+              <div>
+                <div class="flex items-center gap-2 group">
+                  <span
+                    class="neon block w-6 h-1 group-hover:w-10 transition-all bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                  <p class="text-[20px] text-white">Observação Noturna</p>
                 </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="grid grid-rows-2 gap-4">
-
-          <div class="rounded-xl overflow-hidden group relative">
-            <img src="/img/canoagem.jpg" alt=""
-              class="transform group-hover:scale-110 transition duration-200 object-cover">
-            <div
-              class=" opacity-0 group-hover:opacity-100 bg-linear-to-t from-black/70 transition duration-300 absolute block w-full h-full z-10 bottom-0">
-              <div class="flex flex-col justify-end w-full h-full p-4">
-                <p class=" text-white">Canoagem</p>
+                <p class="text-md font-light text-gray-400 ml-8">Explore a vida selvagem em seu habitat natural sob as
+                  estrelas.</p>
               </div>
-            </div>
-          </div>
-
-          <div class="rounded-xl overflow-hidden group relative peer">
-            <img src="/img/vida-selvagem.jpg" alt=""
-              class="w-full h-full transform group-hover:scale-110 transition duration-200">
-            <div
-              class=" opacity-0 group-hover:opacity-100 bg-linear-to-t from-black/70 transition duration-300 absolute block w-full h-full z-10 bottom-0">
-              <div class="flex flex-col justify-end w-full h-full p-4">
-                <p class=" text-white">Vida Selvagem</p>
+              <div>
+                <div class="flex items-center gap-2 group">
+                  <span
+                    class="neon block w-6 h-1 group-hover:w-10 transition-all bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                  <p class="text-[20px] text-white">Vida Selvagem</p>
+                </div>
+                <p class="text-md font-light text-gray-400 ml-8">Observe a vida selvagem em seu habitat natural.</p>
               </div>
+              <div>
+                <div class="flex items-center gap-2 group">
+                  <span
+                    class="neon block w-6 group-hover:w-10 transition-all h-1  bg-verde-200 shadow-[0_0_8px_rgba(72,187,120,0.8)]"></span>
+                  <p class="text-[20px] text-white">Canoagem</p>
+                </div>
+                <p class="text-md font-light text-gray-400 ml-8">Conquiste novos horizontes com nossa equipe
+                  especializada.</p>
+              </div>
+
             </div>
           </div>
 
         </div>
+      </div>
+
+      <div class="grid grid-rows-2 gap-4">
 
         <div class="rounded-xl overflow-hidden group relative">
-          <img src="/img/observacao-noturna.jpg" alt=""
-            class="w-full h-full transform group-hover:scale-110 transition duration-200">
+          <img src="/img/canoagem.jpg" alt=""
+            class="transform group-hover:scale-110 size-full transition duration-200 object-cover">
           <div
-            class=" opacity-0 group-hover:opacity-100 bg-linear-to-t from-black/80 transition duration-300 absolute block w-full h-full z-10 bottom-0">
+            class=" opacity-0 group-hover:opacity-100 bg-linear-to-t from-black/70 transition duration-300 absolute block w-full h-full z-10 bottom-0">
             <div class="flex flex-col justify-end w-full h-full p-4">
-              <p class=" text-white">Observação Noturna</p>
+              <p class=" text-white">Canoagem</p>
             </div>
           </div>
         </div>
 
+        <div class="rounded-xl overflow-hidden group relative peer">
+          <img src="/img/vida-selvagem.jpg" alt=""
+            class="w-full h-full transform object-cover group-hover:scale-110 size-full transition duration-200">
+          <div
+            class=" opacity-0 group-hover:opacity-100 bg-linear-to-t from-black/70 transition duration-300 absolute block w-full h-full z-10 bottom-0">
+            <div class="flex flex-col justify-end w-full h-full p-4">
+              <p class=" text-white">Vida Selvagem</p>
+            </div>
+          </div>
+        </div>
 
       </div>
-    </section>
+
+      <div class="rounded-xl overflow-hidden group relative">
+        <img src="/img/observacao-noturna.jpg" alt=""
+          class="w-full h-full transform size-full object-cover group-hover:scale-110 transition duration-200">
+        <div
+          class=" opacity-0 group-hover:opacity-100 bg-linear-to-t from-black/80 transition duration-300 absolute block w-full h-full z-10 bottom-0">
+          <div class="flex flex-col justify-end w-full h-full p-4">
+            <p class=" text-white">Observação Noturna</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
 
 
 
-  </main>
 
 
 </body>
